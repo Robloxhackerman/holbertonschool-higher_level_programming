@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 
+PEPE = "{:c}"
 for PEPE1 in range(97, 123):
-    print(f"{chr(PEPE1)}", end = '')
+    print({PEPE.format(PEPE1)}, end = '')
