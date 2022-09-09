@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def fizzbuzz():
     print("1 2", end="")
-    for PEPE1 in range(0, 101):
+    for PEPE1 in range(3, 101):
         if (PEPE1 % 3) == 0 and (PEPE1 % 5) == 0:
             print(" FizzBuzz",end="")
         elif (PEPE1 % 5) == 0:
