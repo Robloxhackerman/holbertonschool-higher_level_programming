@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def fizzbuzz():
     for PEPE1 in range(0, 101):
-        if (PEPE % 3) == 0 and (PEPE % 5) == 0:
+        if (PEPE1 % 3) == 0 and (PEPE1 % 5) == 0:
             print(" FizzBuzz")
-        elif (PEPE % 5) == 0:
+        elif (PEPE1 % 5) == 0:
             print(" Buzz")
-        elif (PEPE % 3) == 0:
+        elif (PEPE1 % 3) == 0:
             print(" Fizz")
         else:
             print("{}".format(PEPE1))
