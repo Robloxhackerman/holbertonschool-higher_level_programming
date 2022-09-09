@@ -2,6 +2,6 @@
 
 for PEPE1 in range(0, 100):
     if PEPE1 < 99:
-        print("{:12d}, " .format(PEPE1), end="")
+        print("{:02d}, " .format(PEPE1), end="")
     else:
         print(PEPE1)
