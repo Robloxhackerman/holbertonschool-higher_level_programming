@@ -6,4 +6,4 @@ def uppercase(str):
            PEPEXTO = PEPEXTO + chr(ord(str[PEPE1]) - 32)
            continue
        PEPEXTO = PEPEXTO + str[PEPE1]
-    print("{}".format(PEPEXTO))
+   print("{}".format(PEPEXTO))
