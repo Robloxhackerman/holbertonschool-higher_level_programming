@@ -9,4 +9,4 @@ def fizzbuzz():
         elif (PEPE1 % 3) == 0:
             print(" Fizz",end="")
         else:
-            print("{} ".format(PEPE1),end="")
+            print(" {}".format(PEPE1),end="")
