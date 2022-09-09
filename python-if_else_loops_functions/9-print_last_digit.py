@@ -4,5 +4,5 @@ def print_last_digit(number):
         PEPE = (number * -1) % 10
     elif number >= 0:
         PEPE = number % 10
-    print(number, end="")
-    return number
+    print(PEPE, end="")
+    return PEPE
