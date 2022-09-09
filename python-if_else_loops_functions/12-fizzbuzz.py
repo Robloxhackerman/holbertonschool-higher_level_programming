@@ -10,3 +10,4 @@ def fizzbuzz():
             print(" Fizz",end="")
         else:
             print(" {}".format(PEPE1),end="")
+    print(" ")
