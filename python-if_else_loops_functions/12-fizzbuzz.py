@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    print("1 2")
+    print("1 2", end="")
     for PEPE1 in range(0, 101):
         if (PEPE1 % 3) == 0 and (PEPE1 % 5) == 0:
             print(" FizzBuzz",end="")
