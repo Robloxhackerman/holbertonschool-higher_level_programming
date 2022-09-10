@@ -6,4 +6,4 @@ for PEPE1 in range(0, 10):
             if PEPE1 == 8 and PEPE2 == 9:
                 print("{}{}".format(PEPE1, PEPE2))
             else:
-                print("{}{}".format(PEPE1, PEPE2), end="")
+                print("{}{}, ".format(PEPE1, PEPE2), end="")
