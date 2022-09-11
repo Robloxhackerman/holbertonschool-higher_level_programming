@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from calculator_1.py import add, sub, mul, div
-import sys
+from sys import argv
 if __name__ == "__main__":
     PEPARGO = len(sys.argv)
     PEMENTO = sys.argv
