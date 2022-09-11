@@ -8,9 +8,9 @@ if __name__ == "__main__":
         print("arguments.")
     elif PEPARGO == 1:
         print("{} argument:".format(PEPARGO))
-        for PEPE1 in range(1, PEPARGO):
+        for PEPE1 in range(1, PEPARGO + 1):
             print("{}: {}".format(PEPE1, PEMENTO[PEPE1]))
     elif PEPARGO > 0 and PEPARGO != 1:
         print("{} arguments:".format(PEPARGO))
-        for PEPE1 in range(1, PEPARGO):
+        for PEPE1 in range(1, PEPARGO + 1):
             print("{}: {}".format(PEPE1, PEMENTO[PEPE1]))
