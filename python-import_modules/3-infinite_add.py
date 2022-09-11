@@ -5,7 +5,11 @@ if __name__ == "__main__":
     PEPARGO = len(PEMENTO)
     PEPUMA = 0
 
-    if PEPARGO > 1:
+    if PEPARGO == 0:
+        print("0")
+    elif PEPARGO == 1:
+        print(PEMENTO)
+    elif PEPARGO > 0:
         for PEPE1 in range(1, PEPARGO):
             PEPUMA = PEPUMA + int(PEMENTO[PEPARGO])
-    print(PEPUMA)
+            print("{}".format(PEPUMA))
