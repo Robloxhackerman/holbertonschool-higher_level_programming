@@ -9,5 +9,10 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     else:
         if PEMENTO[2] == "+":
-            PEPON = add(int(PEMENTO[1]), int(PEMENTO[3]))
-            print("{} + {} = {}".format(PEMENTO[1], PEMENTO[3], PEPON))
+            print("{} + {} = {}".format(PEMENTO[1], PEMENTO[3], add(int(PEMENTO[1]), int(PEMENTO[3]))))
+        elif PEMENTO[2] == "-":
+            print("{} - {} = {}".format(PEMENTO[1], PEMENTO[3], sub(int(PEMENTO[1]), int(PEMENTO[3]))))
+        elif PEMENTO[2] == "*":
+            print("{} * {} = {}".format(PEMENTO[1], PEMENTO[3], mul(int(PEMENTO[1]), int(PEMENTO[3]))))
+        elif PEMENTO[2] == "/":
+            print("{} / {} = {}".format(PEMENTO[1], PEMENTO[3], div(int(PEMENTO[1]), int(PEMENTO[3]))))
