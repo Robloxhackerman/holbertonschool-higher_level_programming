@@ -3,6 +3,7 @@ import sys
 if __name__ == "__main__":
     PEPARGO = len(sys.argv) - 1
     PEMENTO = sys.argv
+    PEPUMA = 0
 
     if PEPARGO == 0:
         print("0")
