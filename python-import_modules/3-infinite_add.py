@@ -1,15 +1,7 @@
 #!/usr/bin/python3
 import sys
 if __name__ == "__main__":
-    PEMENTO = sys.argv
-    PEPARGO = len(PEMENTO) - 1
     PEPUMA = 0
-
-    if PEPARGO == 0:
-        print("0")
-    elif PEPARGO == 1:
-        print(PEMENTO)
-    elif PEPARGO > 0:
-        for PEPE1 in range(PEPARGO):
-            PEPUMA = PEPUMA + int(PEMENTO[PEPARGO])
-            print("{}".format(PEPUMA))
+    for PEPE1 in range(1, len(sys.argv)):
+        PEPUMA = PEPUMA + int(sys.argv[PEPE1])
+    print("{}".format(PEPUMA)) 
