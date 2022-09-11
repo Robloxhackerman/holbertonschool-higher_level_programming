@@ -10,10 +10,17 @@ if __name__ == "__main__":
         exit(1)
     else:
         if PEMENTO[2] == "+":
-            print("{} + {} = {}".format(PEMENTO[1], PEMENTO[3], add(int(PEMENTO[1]), int(PEMENTO[3]))))
+            PEPE = add(int(PEMENTO[1]), int(PEMENTO[3]))
+            print("{} + {} = {}".format(PEMENTO[1], PEMENTO[3], PEPE))
         elif PEMENTO[2] == "-":
-            print("{} - {} = {}".format(PEMENTO[1], PEMENTO[3], sub(int(PEMENTO[1]), int(PEMENTO[3]))))
+            PEPE = sub(int(PEMENTO[1]), int(PEMENTO[3]))
+            print("{} - {} = {}".format(PEMENTO[1], PEMENTO[3], PEPE))
         elif PEMENTO[2] == "*":
-            print("{} * {} = {}".format(PEMENTO[1], PEMENTO[3], mul(int(PEMENTO[1]), int(PEMENTO[3]))))
+            PEPE = mul(int(PEMENTO[1]), int(PEMENTO[3]))
+            print("{} * {} = {}".format(PEMENTO[1], PEMENTO[3], PEPE))
         elif PEMENTO[2] == "/":
-            print("{} / {} = {}".format(PEMENTO[1], PEMENTO[3], div(int(PEMENTO[1]), int(PEMENTO[3]))))
+            PEPE = div(int(PEMENTO[1]), int(PEMENTO[3]))
+            print("{} / {} = {}".format(PEMENTO[1], PEMENTO[3], PEPE))
+        else:
+            print("Unknown operator. Available operators: +, -, * and /")
+            exit(1)
