@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 if __name__ == "__main__":
-    PEPARGO = len(sys.argv) - 1
+    PEPARGO = len(sys.argv)
     PEMENTO = sys.argv
     PEPUMA = 0
 
