@@ -8,6 +8,6 @@ def print_matrix_integer(matrix=[[]]):
             if PEPE2 == PEPARGO:
                 print("{:d}".format(PEPE2), end="")
             else:
-                print("{:d}".format(PEPE2), end="")
+                print("{:d}".format(PEPE2), end=" ")
             PEPE2 = PEPE2 + 1
         print()
