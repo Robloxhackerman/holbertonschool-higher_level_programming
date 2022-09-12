@@ -9,5 +9,5 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d}".format(PEPE2), end="")
             else:
                 print("{:d}".format(PEPE2), end="")
-            PEPE2++
+            PEPE2 = PEPE2 + 1
         print()
