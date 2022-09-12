@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
+    listita = my_list.copy()
     if idx < 0:
-        return my_list
+        return listita
     elif idx > (len(my_list) - 1):
-        return my_list
+        return listita
     else:
-        listita = my_list
         listita[idx] = element
         return listita
