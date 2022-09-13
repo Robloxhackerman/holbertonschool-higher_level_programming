@@ -5,6 +5,6 @@ def max_integer(my_list=[]):
         for PEPE1 in range(len(my_list) - 1):
             if my_list[PEPE1] >= PEPOTE:
                 PEPOTE = my_list[PEPE1]
-                return PEPOTE
             else:
                 continue
+        return PEPOTE
