@@ -5,3 +5,4 @@ def multiple_returns(sentence):
         return tuplita
     else:
         tuplita = (0, None,)
+        return tuplita
