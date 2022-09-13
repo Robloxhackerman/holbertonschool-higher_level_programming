@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    if tuple_a:
+    if tuple_a and tuple_b:
         if len(tuple_a) < 2:
             PEPIN = (0,)
             for PEPE1 in range(3):
@@ -10,7 +10,16 @@ def add_tuple(tuple_a=(), tuple_b=()):
             for PEPE1 in range(3):
                 tuple_b = tuple_b + PEPIN
 
+        if len(tuple_a) == 1 and len(tuple_b) == 1:
+            PEPUM1 = tuple_a[0] + tuple_b[0]
+            tuplita = (PEPUM1,)
+            return tuplita
         PEPUM1 = tuple_a[0] + tuple_b[0]
         PEPUM2 = tuple_a[1] + tuple_b[1]
-        tuplita = (PEPUM1, PEPUM2,)
+        tuplita = (PEPUM1, PEPUM2)
+        return tuplita
+    elif tuple_b:
+        return tuple_b
+    else:
+        tuplita = (0, 0,)
         return tuplita
