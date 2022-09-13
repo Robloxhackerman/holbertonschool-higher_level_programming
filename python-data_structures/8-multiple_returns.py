@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def multiple_returns(sentece):
+def multiple_returns(sentence):
     if sentence:
         tuplita = (len(sentence), sentence[1:],)
         return tuplita
