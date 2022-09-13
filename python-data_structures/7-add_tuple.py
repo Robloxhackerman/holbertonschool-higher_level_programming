@@ -9,7 +9,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
             PEPIN = (0,)
             for PEPE1 in range(3):
                 tuple_b = tuple_b + PEPIN
-        if len(tuple_a) == 1 and len(tuple_b) == 1:
+        elif len(tuple_a) == 1 and len(tuple_b) == 1:
             PEPUM1 = tuple_a[0] + tuple_b[0]
             tuplita = (PEPUM1,)
             return tuplita
