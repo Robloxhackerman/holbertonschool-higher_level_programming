@@ -7,7 +7,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
                 tuple_a = tuple_a + PEPIN
         elif len(tuple_b) < 2:
             PEPIN = (0,)
-            for PEPE1 in range(3)):
+            for PEPE1 in range(3):
                 tuple_b = tuple_b + PEPIN
 
         PEPUM1 = tuple_a[0] + tuple_b[0]
