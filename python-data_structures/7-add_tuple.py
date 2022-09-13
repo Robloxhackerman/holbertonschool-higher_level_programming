@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def add_tuples(tuple_a=(), tuple_b=()):
+def add_tuple(tuple_a=(), tuple_b=()):
     if len(tuple_a) < 2:
         PEPIN = (0,)
         for PEPE1 in range(len(tuple_a)):
