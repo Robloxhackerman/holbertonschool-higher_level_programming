@@ -4,4 +4,4 @@ def multiple_returns(sentence):
         tuplita = (len(sentence), sentence[0:1],)
         return tuplita
     else:
-        tuplita = ("None", 0)
+        tuplita = (0, None,)
