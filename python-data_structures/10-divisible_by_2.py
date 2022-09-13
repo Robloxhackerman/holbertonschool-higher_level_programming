@@ -6,3 +6,4 @@ def divisible_by_2(my_list=[]):
             listita.append(True)
         else:
             listita.append(False)
+    return listita
