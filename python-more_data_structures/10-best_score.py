@@ -7,4 +7,6 @@ def best_score(a_dictionary):
             if PEPE2 >= PEPONCORE:
                 PEPONCORE = PEPE2
                 PEPON = PEPE1
-    return PEPON
+        return PEPON
+    else:
+        return None
