@@ -6,5 +6,5 @@ def uniq_add(my_list=[]):
             if my_list[PEPE1] == my_list[PEPE2]:
                 continue
             else:
-                PEPE = my_list[PEPE1]
+                PEPE = PEPE + my_list[PEPE1]
     return PEPE
