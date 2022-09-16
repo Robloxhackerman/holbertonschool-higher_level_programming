@@ -9,7 +9,7 @@ def safe_print_list(my_list=[], x=0):
                 PEPIN = PEPIN + 1
             else:
                 continue
-    except TypeError:
+    except:
         pass
     finally:
         return PEPIN
