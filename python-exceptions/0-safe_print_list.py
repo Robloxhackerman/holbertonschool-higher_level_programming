@@ -7,5 +7,7 @@ def safe_print_list(my_list=[], x=0):
                 print("{}".format(my_list[PEPIN]), end="")
             PEPIN = PEPIN + 1
         print()
-    except:
-        print("mal pibin")
+    except TypeError:
+        pass
+    finally:
+        return PEPIN
