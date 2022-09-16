@@ -6,7 +6,7 @@ def safe_print_list_integers(my_list=[], x=0):
             if PEPIN < x:
                 if isinstance(PEPE1, int):
                     print("{:d}".format(my_list[PEPIN]), end="")
-                    PEPIN = PEPIN + 1
+                PEPIN = PEPIN + 1
             else:
                 continue
         print()
