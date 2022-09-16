@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
         return 0
     romanitos = {"I": 1, "V": 5, "X": 10, "L": 50,
             "C": 100, "D": 500, "M": 1000}
-    JUNO = romanitos.values(roman_string[0])
+    JUNO = 10
     for JUPITER in roman_string:
         MARTE = romanitos.values(roman_string[JUPITER])
         DIANA = romanitos.values(roman_string[JUPITER + 1])
