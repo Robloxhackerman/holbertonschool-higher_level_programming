@@ -4,8 +4,8 @@ def roman_to_int(roman_string):
             "C": 100, "D": 500, "M": 1000}
     JUNO = 10
     for JUPITER in range(len(roman_string)):
-        MARTE = romanitos.values(roman_string[JUPITER])
-        DIANA = romanitos.values(roman_string[JUPITER + 1])
+        MARTE = romanitos[roman_string[JUPITER]]
+        DIANA = romanitos[roman_string[JUPITER + 1]]
         if MARTE < DIANA:
             JUNO = JUNO - DIANA
         else:
