@@ -5,7 +5,7 @@ def safe_print_list(my_list=[], x=0):
         for PEPE1 in my_list:
             if PEPIN < x:
                 if isinstance(PEPE1, int):
-                    print("{:d".format(PEPUM))
+                    print("{:d}".format(PEPIN))
                 PEPIN = PEPIN + 1
             else:
                 continue
