@@ -6,5 +6,5 @@ def safe_print_division(a, b):
     except ValueError:
         PEPE = None
     finally:
-        print("Inside result: {:f}".format(PEPE))
+        print("Inside result: {:.1f}".format(PEPE))
         return PEPE
