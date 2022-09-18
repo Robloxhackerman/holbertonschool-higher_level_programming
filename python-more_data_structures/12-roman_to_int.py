@@ -14,6 +14,8 @@ def roman_to_int(roman_string):
             JUNO = romanitos[roman_string[JUPITER]]
         elif MARTE < DIANA:
             JUNO = DIANA - JUNO
-        else:
+        elif MARTE > DIANA:
+            JUNO = DIANA + JUNO
+        elif MARTE == DIANA:
             JUNO = DIANA + JUNO
     return JUNO
