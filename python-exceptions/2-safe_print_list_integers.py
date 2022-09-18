@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
             print("{:d}".format(my_list[PEPE1]), end="")
             PEPIN = PEPIN + 1
         except (ValueError, TypeError):
-            PEPE! = PEPE1 + 1
+            PEPE1 = PEPE1 + 1
             continue
     print()
     return PEPIN
