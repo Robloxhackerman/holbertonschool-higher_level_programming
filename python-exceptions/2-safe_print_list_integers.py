@@ -1,18 +1,12 @@
 #!/usr/bin/python3
-def safe_print_list_integers(my_list=[], x=0):
+def safe_print_list(my_list=[], x=0):
     PEPIN = 0
-    NASTY = 0
-    try:
-        for PEPE1 in my_list:
-            if PEPIN < x:
-                if isinstance(PEPE1, int):
-                    NASTY = NASTY + 1
-                    print("{:d}".format(my_list[PEPIN]), end="")
-                PEPIN = PEPIN + 1
-            else:
-                continue
-        print()
-    except:
-        pass
-    finally:
-        return NASTY
+    for PEPE1 in range(x):
+        try:
+            print("{:d}".format(my_list[PEPE1]), end="")
+            PEPIN = PEPIN + 1
+        except (ValueError, TypeError):
+            PEPE! = PEPE1 + 1
+            continue
+    print()
+    return PEPIN
