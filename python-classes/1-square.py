@@ -6,7 +6,7 @@ defines a square
 """
 
 
-class Square(self, size):
+class Square:
     """Square
 
     a square"
