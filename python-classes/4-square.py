@@ -29,7 +29,7 @@ class Square:
         get the size
 
         """
-        return size
+        return self.__size
 
     def size(self, value):
         """size
