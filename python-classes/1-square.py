@@ -7,7 +7,12 @@ defines a square
 
 
 class Square(self, size):
-    
+    """Square
+
+    a square"
+
+    """
+
     def __init__(self, size):
         """__init__
 
