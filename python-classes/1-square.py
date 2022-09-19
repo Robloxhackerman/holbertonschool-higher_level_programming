@@ -18,7 +18,7 @@ class Square(self, size):
 
         The __init__ method inlitialize the value
 
-        Args:
+        Attributes:
             size (int): the size.
 
         """
