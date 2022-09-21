@@ -68,7 +68,7 @@ class Square:
         set the position
 
         """
-        if self.tuplitas(value):
+        if self.tuplita(value):
             self.__position = value
         elif not self.tuplita(value):
             raise TypeError("position must be a tuple of 2 positive integers")
