@@ -109,7 +109,7 @@ class Square:
             for PEPE3 in range(self.__position[1]):
                 print()
             for PEPE1 in range(self.__size):
-                for PEPE4 inr range(self.__position[0]):
+                for PEPE4 in range(self.__position[0]):
                     print(" ")
                 for PEPE2 in range(self.__size):
                     print("#", end="")
