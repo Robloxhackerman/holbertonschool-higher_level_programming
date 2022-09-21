@@ -20,6 +20,7 @@ class Square:
 
         Attributes:
             size (int): size of square
+            position (tuple): position
 
         """
         if type(size) is not int:
