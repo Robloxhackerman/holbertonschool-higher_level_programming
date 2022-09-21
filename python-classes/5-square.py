@@ -65,7 +65,10 @@ class Square:
         prints the area
 
         """
-        for PEPE1 in range(self.__size):
-            for PEPE2 in range(self.__size):
-                print("#", end="")
+        if self.__size == 0:
             print()
+        else:
+            for PEPE1 in range(self.__size):
+                for PEPE2 in range(self.__size):
+                    print("#", end="")
+                print()
