@@ -20,9 +20,9 @@ def add_integer(a, b=98):
 
     PEPE = 0
 
-    if type(a) is not in (int, float):
+    if type(a) not in (int, float):
         raise TypeError("a must be an integer")
-    elif type(b) is not in (int, float):
+    elif type(b) not in (int, float):
         raise TypeError("b must be an integer")
     else:
         PEPE = int(a) + int(b)
