@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""Add
+
+adds two numbers
+
+"""
 def add_integer(a, b=98):
     """sumeishon
 
