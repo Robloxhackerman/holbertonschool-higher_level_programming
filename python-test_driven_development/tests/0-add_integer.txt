@@ -26,3 +26,11 @@ Using ''add_integer''
         >>> add_integer(1, "pepe" )
         Traceback (most recent call last):
         TypeError: b must be an integer
+
+	>>> add_integer(float('inf'))
+    	Traceback (most recent call last):
+    	OverflowError: cannot convert float infinity to integer
+
+	>>> add_integer(float('NaN'))
+    	Traceback (most recent call last):
+    	ValueError: cannot convert float NaN to integer
