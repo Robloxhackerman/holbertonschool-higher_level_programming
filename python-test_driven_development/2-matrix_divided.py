@@ -22,8 +22,8 @@ def matrix_divided(matrix, div):
 
         for PEPE2 in PEPE1:
             if type(PEPE2) not in (int, float):
-                raise TypeError('matrix must be a matrix (list of lists)' 
-                                'of integers/floats')
+                raise TypeError('matrix must be a matrix (list of lists)'
+                                ' of integers/floats')
             PEPE = PEPE2 / div
             matrizita2.append(round(PEPE, 2))
         matrizita.append(matrizita2)
