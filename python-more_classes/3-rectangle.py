@@ -15,6 +15,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         for PEPE1 in range(self.__height):
+            PEPE = ""
             PEPE = PEPE + '\n'
             for PEPE2 in range(self.__width):
                 PEPE = PEPE + "#"
