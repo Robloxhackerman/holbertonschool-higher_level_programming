@@ -23,7 +23,7 @@ class Rectangle:
             if PEPE1 > 0:
                 PEPE = PEPE + '\n'
             for PEPE2 in range(self.__width):
-                PEPE = PEPE + str(Rectangle.print_symbol)
+                PEPE = PEPE + str(self.print_symbol)
         return PEPE
 
     def __repr__(self):
