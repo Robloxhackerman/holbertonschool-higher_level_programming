@@ -23,7 +23,7 @@ class Rectangle:
         return PEPE
 
         def __repr__(self):
-            return repr('Rectangle(' + self.__width + ', ' + self.__height )
+            return repr('Rectangle(' + self.width + ', ' + self.height)
 
     @property
     def width(self):
