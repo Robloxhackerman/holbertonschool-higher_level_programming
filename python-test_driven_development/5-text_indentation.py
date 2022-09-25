@@ -8,7 +8,7 @@ prints text
 
 def text_indentation(text):
     """ prints a text with 2
-        new lines after each .?:
+        new lines after each '.?:'
     """
 
     if type(text) is not str:
