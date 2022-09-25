@@ -6,12 +6,8 @@ Using ''text_indentation''
 
 >>> text_indentation = __import__("5-text_indentation").text_indentation
 
-	>>> text_indentation("Batman.<3.Catwoman")
+	>>> text_indentation("Batman")
 	Batman
-	
-	<3
-	
-	Catwoman
 
 	>>> text_indentation(69)
 	Traceback (most recent call last):
