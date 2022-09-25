@@ -23,7 +23,10 @@ class Rectangle:
         return PEPE
 
         def __repr__(self):
-            return ("Rectangle({:d}, {:d})".format(self.width, self.height))
+            width = str(eval("self.width"))
+            height = str(eval("self.height"))
+
+            return "Rectangle(" + width ", " + height + ")"
 
     @property
     def width(self):
