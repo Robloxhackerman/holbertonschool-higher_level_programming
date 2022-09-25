@@ -1,0 +1,24 @@
+The ''5-text_indentation.py'' module
+====================================
+
+Using ''text_indentation''
+--------------------------
+
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+	>>> text_indentation("Batman.<3.Catwoman")
+	Batman
+	
+	<3
+	
+	Catwoman
+
+	>>> text_indentation(69)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation("")
+
+	>>> text_indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
