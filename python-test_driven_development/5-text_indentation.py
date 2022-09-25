@@ -16,7 +16,7 @@ def text_indentation(text):
     PEPE = False
     PEPIN = 0
     for PEPE1 in range(len(text)):
-        if text[PEPE1] is in ".?:":
+        if text[PEPE1] in ".?:":
             PEPE = False
             PEPON = PEPE1 + 1
             print(text[PEPIN:PEPON].lstrip(), end='\n\n')
