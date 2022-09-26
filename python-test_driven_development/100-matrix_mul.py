@@ -24,7 +24,7 @@ def matrix_mul(m_a, m_b):
         if not isinstance(PEPE2, list):
             raise TypeError("m_a must be a list of lists")
         for PEPE4 in PEPE3:
-            if type(PEPE3) in (int, float):
+            if type(PEPE4) in (int, float):
                 raise TypeError("m_b should contain only integers or floats")
         if len(PEPE3) != len(m_b[0]):
             raise TypeError("each row of m_b must be of the same size")
