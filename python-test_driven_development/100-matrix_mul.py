@@ -29,10 +29,10 @@ def matrix_mul(m_a, m_b):
         if len(PEPE3) != len(m_b[0]):
             raise TypeError("each row of m_b must be of the same size")
     
-    if len(m_a) == 0 or len(m_a[0]) == 0:
+    if len(m_a) == 0 or type(m_a[0]) is list and len(m_a[0]) == 0:
         raise ValueError("m_a can't be empty")
     
-    if len(m_b) == 0 or len(m_b[0]) == 0:
+    if len(m_b) == 0 or type(m_b[0]) is list and len(m_b[0]) == 0:
         raise ValueError("m_b can't be empty")
 
     if len(m_a[0]) != len(m_b):
