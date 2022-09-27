@@ -10,8 +10,8 @@ def append_after(filename="", search_string="", new_string=""):
 
     with open(filename, "w") as f2:
         PEPO = ""
-        for PEPE1 in PEPO:
+        for PEPE1 in PEPE:
             PEPO = PEPO + PEPE1
             if search_string in PEPE1:
-                PEPO = PEPEO + new_string
+                PEPO = PEPO + new_string
         f2.write(PEPO)
