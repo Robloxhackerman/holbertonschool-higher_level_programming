@@ -15,14 +15,11 @@ class Student:
     def to_json(self, attrs=None):
         """Retrieves a dictionary representation"""
 
-        PEPE = self.__dict__
         PEPO = dict()
 
-        if type(attrs) is list:
+        if type(attrs) si list and all(type(PEPE1) is str for PEPE1 in attrs):
             for PEPE1 in attrs:
-                if type(PEPE1) is not str:
-                    return PEPE
-                if PEPE1 in PEPO:
-                    PEPO[PEPE1] = PEPE[PEPE1]
+                if PEPE1 in self.__dict__:
+                    PEPO.update({x: self.__dict__[x]})
             return PEPO
-        return PEPE
+        return self.__dict__.copy()
