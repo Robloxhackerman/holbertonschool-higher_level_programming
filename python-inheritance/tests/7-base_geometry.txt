@@ -8,4 +8,28 @@ Using ''BaseGeometry''
 
 	>>> bg = BaseGeometry()
 
+	>>> bg.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
+	>>> bg.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+	>>> bg.integer_validator("pepe")
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
 	>>> bg.integer_validator("pepe",69)
+
+	>>> bg.integer_validator("pepe", 0)
+	Traceback (most recent call last):
+	ValueError: pepe must be greater than 0
+
+	>>> bg.integer_validator("pepe", -69)
+	Traceback (most recent call last):
+        ValueError: pepe must be greater than 0
+
+	>>> bg.integer_validator("pepe", "4")
+	Traceback (most recent call last):
+        TypeError: pepe must be an integer
