@@ -4,7 +4,7 @@ The ''7-base_geometry.py'' module
 Using ''BaseGeometry''
 -----------------------
 
->>> BaseGeometry = __import__("0-base_geometry").BaseGeometry
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 	>>> bg = BaseGeometry()
 
