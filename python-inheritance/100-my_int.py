@@ -13,4 +13,4 @@ class MyInt(int):
     def __ne__(self, other):
         """UNO: blue reverse"""
 
-        return super():__eq__(other)
+        return super().__eq__(other)
