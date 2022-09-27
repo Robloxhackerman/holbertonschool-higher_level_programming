@@ -2,9 +2,7 @@
 """Twins or another thing"""
 
 
-def is_kind_if_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """Same class or inherit from"""
-    if issubclass(obj, a_clas) or type(obj) == a_class:
-        return True
-    else:
-        return False
+
+    return (isinstance(obj, a_class))
