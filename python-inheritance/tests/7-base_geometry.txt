@@ -33,3 +33,23 @@ Using ''BaseGeometry''
 	>>> bg.integer_validator("pepe", "4")
 	Traceback (most recent call last):
         TypeError: pepe must be an integer
+
+	>>> bg.integer_validator("pepe", (4,))
+        Traceback (most recent call last):
+        TypeError: pepe must be an integer
+
+	>>> bg.integer_validator("pepe", [3])
+        Traceback (most recent call last):
+        TypeError: pepe must be an integer
+
+	>>> bg.integer_validator("pepe", True)
+        Traceback (most recent call last):
+        TypeError: pepe must be an integer
+
+	>>> bg.integer_validator("pepe", {3,4})
+        Traceback (most recent call last):
+        TypeError: pepe must be an integer
+
+	>>> bg.integer_validator("pepe", None)
+        Traceback (most recent call last):
+        TypeError: pepe must be an integer
