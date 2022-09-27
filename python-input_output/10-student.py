@@ -20,6 +20,6 @@ class Student:
         if type(attrs) is list and all(type(PEPE1) is str for PEPE1 in attrs):
             for PEPE1 in attrs:
                 if PEPE1 in self.__dict__:
-                    PEPO.update({x: self.__dict__[x]})
+                    PEPO.update({PEPE1: self.__dict__[PEPE1]})
             return PEPO
         return self.__dict__.copy()
