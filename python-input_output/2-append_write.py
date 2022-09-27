@@ -2,7 +2,7 @@
 """Agregando"""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """appends string at the end of a file"""
 
     with open(filename, "a") as f:
