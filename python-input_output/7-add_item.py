@@ -13,7 +13,7 @@ filesito = "add_item.json"
 listita = []
 
 if os.path.exists(filesito) and os.path.getsize(filesito) > 0:
-    listita = load_from_json_files(filesito)
+    listita = load_from_json_file(filesito)
 
 if len(sys.argv) > 1:
     for PEPE1 in sys.argv[1:]:
