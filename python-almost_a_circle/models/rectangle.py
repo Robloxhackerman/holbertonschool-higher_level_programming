@@ -126,3 +126,12 @@ class Rectangle(Base):
             for PEPE2 in range(self.__width):
                 print("#", end="")
             print()
+
+    def update(self, *args):
+        """pepo"""
+
+        listita = ["id", "width", "height", "x", "y"]
+
+        if argc > 0:
+            for PEPE1 in range(argc):
+                setattr(self, listita[PEPE1], args[PEPE1])
