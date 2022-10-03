@@ -10,6 +10,11 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """new init"""
+        self.pitudo(width, "width")
+        self.pitudo(height, "height")
+        self.pitudo(x, "x")
+        self.pitudo(y, "y")
+
         self.__width = width
         self.__height = height
         self.__x = x
@@ -30,10 +35,6 @@ class Rectangle(Base):
     @width.setter
     def width(self, width):
         """width setter"""
-        if width is not int:
-            raise TypeError("width must be an integer")
-        if width <= 0:
-            raise TypeError("width must be > 0")
         self.__width = width
         return self.__width
 
@@ -51,10 +52,6 @@ class Rectangle(Base):
     @height.setter
     def height(self, height):
         """height setter"""
-        if height is not int:
-            raise TypeError("height must be an integer")
-        if height <= 0:
-            raise TypeError("height must be > 0")
         self.__height = height
         return self.__height
 
@@ -72,10 +69,6 @@ class Rectangle(Base):
     @x.setter
     def x(self, x):
         """height setter"""
-        if x is not int:
-            raise TypeError("x must be an integer")
-        if x < 0:
-            raise TypeError("x must be >= 0")
         self.__x = x
         return self.__x
 
@@ -93,9 +86,15 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """height setter"""
-        if y is not int:
-            raise TypeError("y must be an integer")
-        if y <= 0:
-            raise TypeError("y must be > 0")
         self.__y = y
         return self.__y
+
+    def pitudo(self, value1, value2):
+        """hehehe"""
+
+        if value1 is not int:
+            raise TypeError("{} must be an integer".format(value2))
+        if value1 <= 0 and value2 in ("width", "height"):
+            raise ValueError("{} must be > 0".format(value2))
+        if value1 < 0 and value2 in ("x", "y"):
+            raise ValueError("{} must be >= 0".format(value2))
