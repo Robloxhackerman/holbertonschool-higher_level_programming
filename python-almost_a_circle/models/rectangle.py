@@ -102,3 +102,9 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(value2))
         if value1 < 0 and value2 in ("x", "y"):
             raise ValueError("{} must be >= 0".format(value2))
+
+    def area(self):
+        """aaaaaaaaaa"""
+
+        areasita = self.__width * self.__height
+        return areasita
