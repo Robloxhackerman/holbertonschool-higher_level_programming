@@ -108,3 +108,9 @@ class Rectangle(Base):
 
         areasita = self.__width * self.__height
         return areasita
+
+    def display(self):
+        for PEPE1 in range(self.__width):
+            for PEPE2 in range(self.__height):
+                print("#", end="")
+            print()
