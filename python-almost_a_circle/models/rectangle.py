@@ -119,7 +119,7 @@ class Rectangle(Base):
         """aaaaaaaa"""
 
         for PEPE3 in range(self.__y):
-            print(" ")
+            print()
         for PEPE1 in range(self.__height):
             for PEPE4 in range(self.__x):
                 print(" ", end="")
