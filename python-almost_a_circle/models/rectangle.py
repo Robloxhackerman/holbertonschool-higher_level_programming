@@ -96,7 +96,7 @@ class Rectangle(Base):
     def pitudo(self, value1, value2):
         """hehehe"""
 
-        if value1 is not int:
+        if type(value1) is not int:
             raise TypeError("{} must be an integer".format(value2))
         if value1 <= 0 and value2 in ("width", "height"):
             raise ValueError("{} must be > 0".format(value2))
