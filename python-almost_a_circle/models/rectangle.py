@@ -128,7 +128,7 @@ class Rectangle(Base):
             print()
 
     def update(self, *args):
-        """pepo"""
+        """Papo pe parabi pa pa pa po"""
         larguito = len(args)
         listita = ["id", "width", "height", "x", "y"]
 
