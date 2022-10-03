@@ -35,6 +35,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, width):
         """width setter"""
+        self.pitudo(width, "width")
         self.__width = width
         return self.__width
 
@@ -52,6 +53,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, height):
         """height setter"""
+        self.pitudo(height, "height")
         self.__height = height
         return self.__height
 
@@ -68,6 +70,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
+        self.pitudo(x, "x")
         """height setter"""
         self.__x = x
         return self.__x
@@ -86,6 +89,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """height setter"""
+        self.pitudo(y, "y")
         self.__y = y
         return self.__y
 
