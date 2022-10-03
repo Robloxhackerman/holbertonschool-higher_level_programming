@@ -129,9 +129,9 @@ class Rectangle(Base):
 
     def update(self, *args):
         """pepo"""
-
+        larguito = len(args)
         listita = ["id", "width", "height", "x", "y"]
 
-        if argc > 0:
-            for PEPE1 in range(argc):
+        if larguito > 0:
+            for PEPE1 in range(larguito):
                 setattr(self, listita[PEPE1], args[PEPE1])
