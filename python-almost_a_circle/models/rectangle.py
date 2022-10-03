@@ -118,10 +118,10 @@ class Rectangle(Base):
     def display(self):
         """aaaaaaaa"""
 
-        for PEPE3 in range(self.__x):
+        for PEPE3 in range(self.__y):
             print(" ")
         for PEPE1 in range(self.__height):
-            for PEPE4 in range(self.__y):
+            for PEPE4 in range(self.__x):
                 print(" ", end="")
             for PEPE2 in range(self.__width):
                 print("#", end="")
