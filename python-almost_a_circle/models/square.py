@@ -44,3 +44,13 @@ class Square(Rectangle):
             for PEPE1, PEPE2 in kwargs.items():
                 if PEPE1 in listita:
                     setattr(self, PEPE1, PEPE2)
+
+    def to_dictionary(self):
+        """aaaaaaaaaaaaaaaa"""
+
+        return {
+                "id": self.id,
+                "size": self.size,
+                "x": self.x,
+                "y": self.y
+                }
