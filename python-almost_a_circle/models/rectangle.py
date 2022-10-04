@@ -127,7 +127,7 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args, **kwargc):
+    def update(self, *args, **kwargs):
         """Papo pe parabi pa pa pa po"""
         larguito = len(args)
         listita = ["id", "width", "height", "x", "y"]
@@ -135,7 +135,7 @@ class Rectangle(Base):
         if larguito > 0:
             for PEPE1 in range(larguito):
                 setattr(self, listita[PEPE1], args[PEPE1])
-        if kwargc > 0:
+        if len(kwargs) > 0:
             for PEPE1, PEPE2 in kwargs.items():
-                if PEEP1 in listita:
+                if PEPE1 in listita:
                     setattr(self, PEPE1, PEPE2)
