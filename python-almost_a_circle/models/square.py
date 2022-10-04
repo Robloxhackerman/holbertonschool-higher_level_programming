@@ -15,14 +15,14 @@ class Square(Rectangle):
     def __str__(self):
         """aaaaaaaaaaaaaaaa"""
 
-        return f"[Square] ({self.id}) {self.__x}/{self.__y} - " \
-            f"{self.__size}"
+        return "[Square] ({}) {}/{} - {}".format(
+                self.id, self.x, self.y, self.size)
 
     @property
     def size(self):
         """aaaaaaa"""
 
-        return self.size
+        return self.width
 
     @size.setter
     def size(self, value):
@@ -30,3 +30,16 @@ class Square(Rectangle):
 
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """Papo pe parabi pa pa pa po"""
+        larguito = len(args)
+        listita = ["id", "size", "x", "y"]
+
+        if larguito > 0:
+            for PEPE1 in range(larguito):
+                setattr(self, listita[PEPE1], args[PEPE1])
+        if len(kwargs) > 0:
+            for PEPE1, PEPE2 in kwargs.items():
+                if PEPE1 in listita:
+                    setattr(self, PEPE1, PEPE2)
