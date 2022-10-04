@@ -139,3 +139,14 @@ class Rectangle(Base):
             for PEPE1, PEPE2 in kwargs.items():
                 if PEPE1 in listita:
                     setattr(self, PEPE1, PEPE2)
+
+    def to_dictionary(self):
+        """aaaaaaa"""
+
+        return {
+                "id": self.__id,
+                "width": self.__width
+                "height": self.__height,
+                "x": self.__x
+                "y": self.__y
+                }
