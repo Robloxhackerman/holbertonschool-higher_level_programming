@@ -57,7 +57,7 @@ class Base:
     def create(cls, **dictionary):
         if cls.__name__ == "Square":
             dummy = cls(69)
-        if cls.__name__ == "Rectangle"
+        if cls.__name__ == "Rectangle":
             dummy = cls.(6, 9)
 
         dummy.update(**dictionary)
