@@ -1,1 +1,2 @@
+-- Lists databases
 SHOW DATABASES;
