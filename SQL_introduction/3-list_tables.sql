@@ -1,0 +1,2 @@
+-- Cosas
+SHOW TABLES;
