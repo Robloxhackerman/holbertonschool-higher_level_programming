@@ -4,7 +4,7 @@ import MySQLdb
 from sys import argv
 
 
-"""aaaaa"""
+"""aaaa"""
 if __name__ == "__main__":
     dataB = MySQLdb.connect(
         host="localhost",
@@ -19,3 +19,4 @@ if __name__ == "__main__":
 
     for row in result:
         print(row)
+        
