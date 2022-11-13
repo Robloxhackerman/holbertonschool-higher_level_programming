@@ -14,8 +14,10 @@ if __name__ == "__main__":
         database=argv[3]
         )
     cursor = dataB.cursor()
-    cursor.execute("SELECT name, states FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC;")
+    cursor.execute('''SELECT id, name FROM states WHERE name LIKE 'N%'
+    ORDER BY states.id ASC;''')
     result = cursor.fetchall()
 
     for row in result:
-        print(row)
+        if row[1][0] == "N":
+            print(row)
