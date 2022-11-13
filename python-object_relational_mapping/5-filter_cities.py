@@ -18,7 +18,7 @@ if __name__ == "__main__":
     cursor.execute("SELECT cit.name FROM cities cit \
         LEFT JOIN states st ON cit.st_id = s.id \
         WHERE s.name = %s \
-        ORDER BY c.id", (argv[4], ))
+        ORDER BY c.id", (argv[4],))
     result = cursor.fetchall()
     for i, record in enumerate(result):
         if i > 0:
