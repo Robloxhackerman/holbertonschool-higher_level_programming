@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""aaaaa"""
+"""aaaa"""
 import MySQLdb
 from sys import argv
 
 
-"""aaaaa"""
+"""aaaa"""
 if __name__ == "__main__":
     dataB = MySQLdb.connect(
         host="localhost",
@@ -12,7 +12,8 @@ if __name__ == "__main__":
         user=argv[1],
         password=argv[2],
         database=argv[3]
-        )
+    )
+
     cursor = dataB.cursor()
     cursor.execute("""SELECT cities.id, cities.name, states.name
     FROM cities JOIN states ON cities.state_id = states.id
