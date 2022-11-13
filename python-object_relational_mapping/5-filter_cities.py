@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""aaaaa"""
+"""Python Module"""
 import MySQLdb
 from sys import argv
 
 
-"""aaaaa"""
+"""SQL Query"""
 if __name__ == "__main__":
     dataB = MySQLdb.connect(
         host="localhost",
@@ -13,6 +13,7 @@ if __name__ == "__main__":
         password=argv[2],
         database=argv[3]
         )
+
     cursor = dataB.cursor()
     cursor.execute("SELECT cit.name FROM cities cit \
         LEFT JOIN states st ON cit.st_id = s.id \
