@@ -13,7 +13,7 @@ if __name__ == "__main__":
         password=argv[2],
         database=argv[3]
         )
-    scursor = dataB.cursor()
+    cursor = dataB.cursor()
     cursor.execute("""SELECT cities.id, cities.name, states.name
     FROM cities JOIN states ON cities.state_id = states.id
     ORDER BY cities.id ASC""")
