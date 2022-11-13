@@ -14,7 +14,8 @@ if __name__ == "__main__":
         database=argv[3]
         )
     cursor = dataB.cursor()
-    cursor.execute('''SELECT * FROM states WHERE name LIKE "{}" ORDER BY states.id ASC;'''.format(argv[4]))
+    cursor.execute('''SELECT * FROM states WHERE name LIKE "{}"
+            ORDER BY states.id ASC;'''.format(argv[4]))
     result = cursor.fetchall()
 
     for row in result:
