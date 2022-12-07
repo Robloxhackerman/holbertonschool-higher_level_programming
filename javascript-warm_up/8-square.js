@@ -1,7 +1,7 @@
 #!/usr/bin/node
 let PAPO = '';
 let PEPE = 0;
-try {
+if (parseInt(process.argv[2])) {
   PEPE = parseInt(process.argv[2]);
   for (let PEPE1 = 0; PEPE1 < PEPE; PEPE1++) {
     PAPO = '';
@@ -10,6 +10,6 @@ try {
     }
     console.log(PAPO);
   }
-} catch (error) {
+} else {
   console.log('Missing size');
 }
