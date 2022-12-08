@@ -5,13 +5,13 @@ let sorted = [];
 if (process.argv[3]) {
   while (len > 2) {
     len--; sorted.push(process.argv[len]);
-  } // copy paste of given nums
+  }
 
-  sorted = sorted.sort((a, b) => a - b); // sorting for easier comparison
-  const res = sorted[sorted.length - 2]; // process.argv.length - 4 works
+  sorted = sorted.sort((a, b) => a - b);
+  const res = sorted[sorted.length - 2];
   console.log(res);
 } else if (process.argv[2]) {
-  console.log(process.argv[2]);
+  console.log(0);
 } else {
   console.log(0);
 }
