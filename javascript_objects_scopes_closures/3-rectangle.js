@@ -7,14 +7,15 @@ module.exports = class Rectangle {
     }
   }
 
-  print () {
-    let PAPO = '';
+  print (PAPO = 'X') {
     for (let PEPE1 = 0; PEPE1 < this.height; PEPE1++) {
-      PAPO = '';
-      for (let PEPE2 = 0; PEPE2 < this.width; PEPE2++) {
-        PAPO += 'X';
+      let PEPE2 = 0;
+      for (; PEPE2 < this.width; PEPE2++) {
+        process.stdout.write(PAPO);
       }
-      console.log(PAPO);
+      if (PEPE2 === this.width) {
+        console.log('');
+      }
     }
   }
 };
