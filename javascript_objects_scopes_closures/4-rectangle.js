@@ -19,7 +19,7 @@ module.exports = class Rectangle {
   }
 
   rotate () {
-    let PEPE = this.width;
+    const PEPE = this.width;
     this.width = this.height;
     this.height = PEPE;
   }
