@@ -1,5 +1,6 @@
+#!/usr/bin/node
 const dict = requiere('./101-data.js').dict;
-let mapMe = {};
+const mapMe = {};
 for (const [key, value] of dict) {
-    mapMe.set(key, value)
+  mapMe.set(key, value);
 }
