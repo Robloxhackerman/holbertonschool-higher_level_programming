@@ -1,9 +1,8 @@
 #!/usr/bin/node
 const request = require('request');
-const url = 'https://swapi-api.hbtn.io/api/films/';
-const urlChar = 'https://swapi-api.hbtn.io/api/people/18/';
+const url = process.argv[2];
 
-request(url, function (err, response, body) {
+request.get(url, function (err, response, body) {
   if (err) {
     throw err;
   } else {
@@ -12,7 +11,7 @@ request(url, function (err, response, body) {
       let count = 0;
       for (const each of data) {
         for (const chars of each.characters) {
-          if (urlChar === chars) {
+          if (chars.endsWith('/18/')) {
             ++count;
           }
         }
